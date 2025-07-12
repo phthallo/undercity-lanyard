@@ -65,7 +65,7 @@ if [ $? -ne 0 ]; then
     echo "Compilation failed. Please check the code."
     exit 1
 fi
-echo "Please hold the boot button on the device and press enter when plugged in"
+echo "Please press down on the screen until the button behind it clicks, then plug in the device and press enter."
 # Wait for the user to press enter
 read -p "Press enter to continue..."
 # Upload the compiled binary to the device
