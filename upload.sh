@@ -56,8 +56,10 @@ if [ -f img_resized.png ]; then
     magick newbadge.bmp img_resized.png -geometry +220+5 -composite newbadge.bmp
 fi
 
-# Convert it to a format suitable for the device
+# install pillow
+/usr/bin/env python3 -m pip install pillow
 
+# Convert it to a format suitable for the device
 /usr/bin/env python3 bmp_to_array.py newbadge.bmp f.h gImage_img
 
 arduino-cli compile --fqbn rp2040:rp2040:generic_rp2350 --output-dir ./build
