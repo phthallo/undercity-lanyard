@@ -8,10 +8,13 @@ __Note : only works on macos :/__
     ```bash
     git clone
     ```
-2. You need anaconda installed & arduino-cli. Install anaconda using this [link](https://www.anaconda.com/docs/getting-started/anaconda/install#macos-linux-installation)
+2. You need anaconda, imagemagick installed & arduino-cli. Install anaconda using this [link](https://www.anaconda.com/docs/getting-started/anaconda/install#macos-linux-installation)
     ```bash
     # arduino cli
     brew install arduino-cli
+
+    # imagemagick
+    brew install imagemagick
 
     arduino-cli config add board_manager.additional_urls https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
 
