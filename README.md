@@ -8,7 +8,7 @@ __Note : only works on macos :/__
     ```bash
     git clone
     ```
-2. You need anaconda, imagemagick installed & arduino-cli. Install anaconda using this [link](https://www.anaconda.com/docs/getting-started/anaconda/install#macos-linux-installation)
+2. You need anaconda, imagemagick installed & arduino-cli. Install anaconda using this [link](https://www.anaconda.com/docs/getting-started/anaconda/install#macos-linux-installation) (USE THE COMMAND LINE INSTALLER)
     ```bash
     # arduino cli
     brew install arduino-cli
