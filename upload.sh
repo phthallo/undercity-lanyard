@@ -65,7 +65,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Wait for the user to press enter
-read -p "Plug in the device and press Enter to continue..."
+read -p "Plug in the device: hold down the screen until the button behind it clicks, AND hold down the 4 buttons on the back, THEN plug it in. Release the buttons, then press Enter to continue..."
 
 # Upload the compiled binary to the device
 echo "Uploading to device..."
