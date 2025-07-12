@@ -6,16 +6,20 @@ echo "Welcome to Undercity Broken Lanyard Upload Script"
 rm -f img.png img_resized.png newbadge.bmp 2>/dev/null
 
 # Ask for name of the user
+echo
 read -p "Please enter your name: " name
 echo "Hello, $name!"
 
 # Ask for slack handle
+echo
 read -p "Please enter your Slack handle: @" slack_handle
 echo "Thank you, $slack_handle! Let's proceed with the upload."
 
 # Optional pronouns
+echo
 read -p "Any text you want to add, like pronouns?: " pronouns
 
+echo
 read -p "Any image you want to add? Leave blank for none (PNG only, full path please): " image_url
 
 # Download the image if provided
@@ -65,6 +69,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Wait for the user to press enter
+echo
 read -p "Plug in the device: hold down the screen until the button behind it clicks, AND hold down the 4 buttons on the back, THEN plug it in. Release the buttons, then press Enter to continue..."
 
 # Upload the compiled binary to the device
