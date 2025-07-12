@@ -6,7 +6,8 @@ __Note : only works on macos :/__
 
 1. Clone the repo
     ```bash
-    git clone
+    git clone https://github.com/gusruben/undercity-lanyard.git
+    cd undercity-lanyard
     ```
 2. You need anaconda, imagemagick installed & arduino-cli. Install anaconda using this [link](https://www.anaconda.com/docs/getting-started/anaconda/install#macos-linux-installation) (USE THE COMMAND LINE INSTALLER)
     ```bash
@@ -20,12 +21,13 @@ __Note : only works on macos :/__
 
     arduino-cli lib install "Adafruit NeoPixel"
     ```
-3. Just run the script
+3. Hold down the screen until the button behind it clicks, AND hold down the 4 buttons on the back of the board, then plug in the badge.
+4. Just run the script
     ```bash
     chmod +x upload.sh
     ./upload.sh
     ```
-4. Follow the instructions and yay!
+5. Follow the instructions and yay!
 
 ## Wooo
 
