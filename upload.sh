@@ -16,9 +16,9 @@ echo "Thank you, $slack_handle! Let's proceed with the upload."
 # Change the img to add the text
 
 # Optional pronouns
-read -p "any text you want to add?: " pronouns
+read -p "any text you want to add, like pronouns?: " pronouns
 
-read -p "any image you want to add? (res is broken u know it + .png only + path pliz) : " image_url
+read -p "any image you want to add? leave blank for none. (res is broken u know it + .png only + path pliz) : " image_url
 # Download the image if provided
 
 if [ -n "$image_url" ]; then
@@ -58,14 +58,14 @@ fi
 
 # Convert it to a format suitable for the device
 
-~/anaconda3/bin/python bmp_to_array.py newbadge.bmp f.h gImage_img
+/bin/env python3 bmp_to_array.py newbadge.bmp f.h gImage_img
 
 arduino-cli compile --fqbn rp2040:rp2040:generic_rp2350 --output-dir ./build
 if [ $? -ne 0 ]; then
     echo "Compilation failed. Please check the code."
     exit 1
 fi
-echo "Please press the boot button on the device and press enter when plugged in"
+echo "Please hold the boot button on the device and press enter when plugged in"
 # Wait for the user to press enter
 read -p "Press enter to continue..."
 # Upload the compiled binary to the device
