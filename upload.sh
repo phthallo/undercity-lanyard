@@ -58,7 +58,7 @@ fi
 
 # Convert it to a format suitable for the device
 
-/bin/env python3 bmp_to_array.py newbadge.bmp f.h gImage_img
+/usr/bin/env python3 bmp_to_array.py newbadge.bmp f.h gImage_img
 
 arduino-cli compile --fqbn rp2040:rp2040:generic_rp2350 --output-dir ./build
 if [ $? -ne 0 ]; then
