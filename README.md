@@ -6,7 +6,8 @@ __Note : only works on macos :/__
 
 1. Clone the repo
     ```bash
-    git clone
+    git clone https://github.com/gusruben/undercity-lanyard.git
+    cd undercity-lanyard
     ```
 2. You need anaconda, imagemagick installed & arduino-cli. Install anaconda using this [link](https://www.anaconda.com/docs/getting-started/anaconda/install#macos-linux-installation) (USE THE COMMAND LINE INSTALLER)
     ```bash
